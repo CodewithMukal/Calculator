@@ -93,6 +93,11 @@ function App() {
           <OrangeButton add="="/>
         </div>
       </div>
+      <footer>
+        <h1 className="text-white font-bold text-2xl relative top-[-110px]">
+          Project by Mukal Markanda
+        </h1>
+      </footer>
     </>
   );
 }
