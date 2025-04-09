@@ -36,7 +36,7 @@ export const OrangeButton = (props) => {
     }
   }
   return (
-      <button onClick={click} className='w-[80px] h-[80px] bg-[#FF9500] hover:brightness-80 rounded-[100%] text-white text-[40px] font-bold font-["Inter] '>
+      <button onClick={click} className='lg:w-[80px] lg:h-[80px] w-[68px] h-[68px] text-3xl bg-[#FF9500] hover:brightness-80 rounded-[100%] text-white lg:text-[40px] font-bold font-["Inter] '>
       {props.add}
     </button>
   )

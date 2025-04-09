@@ -7,9 +7,9 @@ export const Icon = () => {
     container.classList.remove("hidden")
   };
   return (
-    <div onDoubleClick={click} className="flex justify-center items-center flex-col hover:bg-gray-200/15 relative top-[100px] left-[-800px] w-[120px] h-[120px] ">
-      <img src={icon} alt="" width={100} height={100} />
-      <p className="text-white mt-[-7px] font-[600]">Calculator</p>
+    <div onDoubleClick={click} className="flex flex-col justify-center items-center hover:bg-gray-200/15 w-[120px] h-[120px] ">
+        <img src={icon} alt="" width={100} height={100} />
+        <p className="text-white font-[600]">Calculator</p>
     </div>
   );
 };

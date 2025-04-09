@@ -39,8 +39,13 @@ function App() {
   }
   return (
     <>
-    <Icon/>
-      <div ref={containerRef} className="container hidden bg-[#1C1C1C] w-[553px] h-[899px] rounded-[71px] mt-[50px] fixed top-[45%] left-[50%] translate-[-50%]">
+    <h1 className="text-white font-bold text-2xl text-center flex justify-center items-center lg:text-5xl">
+      Project by Mukal Markanda
+    </h1>
+    <div className="mt-[5%] flex justify-left w-[100vw]">
+      <Icon/>
+    </div>
+      <div ref={containerRef} className="container hidden bg-[#1C1C1C] lg:w-[553px] lg:h-[899px] rounded-[71px] mt-[50px] fixed top-[45%] left-[50%] translate-[-50%] w-[80%] h-[90%]">
         <div>
           <h1 className=' text-white text-center font-["Inter"] text-[32px] font-bold pt-[17px] '>
             Calculator
@@ -61,16 +66,16 @@ function App() {
           </div>
         </div>
         <Line />
-        <div className="w-[553px] h-[260px] ">
-          <p ref={hisRef} className="history not-first-of-type:invisible relative text-[#FFFFFF80] font-bold text-right text-[64px] font-['Inter'] right-[21px] top-[76px] ">
+        <div className="lg:w-[553px] lg:h-[260px] w-[100%] h-[32%] flex flex-col justify-center pr-[2%]">
+          <p ref={hisRef} className="history not-first-of-type:invisible text-[#FFFFFF80] font-bold text-right text-[64px] font-['Inter']">
             0
           </p>
-          <p ref={resultRef} className="result relative text-white font-bold text-right text-[64px] font-['Inter'] right-[21px] top-[56px] ">
+          <p ref={resultRef} className="result text-white font-bold text-right text-[64px] font-['Inter']">
             0
           </p>
         </div>
         <Line/>
-        <div className="grid grid-cols-4 mt-[30px] ml-[30px] gap-[18px] ">
+        <div className="grid grid-cols-4 mt-[20px] lg:mt-[30px] ml-[30px] lg:gap-[18px] gap-[15px]">
           <GreyButton add="AC" className="clear" />
           <GreyButton add="+/-" className="invert"/>
           <GreyButton add="%" className="percent" />
@@ -93,11 +98,6 @@ function App() {
           <OrangeButton add="="/>
         </div>
       </div>
-      <footer>
-        <h1 className="text-white font-bold text-2xl relative top-[-110px]">
-          Project by Mukal Markanda
-        </h1>
-      </footer>
     </>
   );
 }

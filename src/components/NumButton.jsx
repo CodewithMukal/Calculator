@@ -25,7 +25,7 @@ export const NumButton = (props) => {
     }
   }
   return (
-        <button onClick={update} className='bg-[#505050] w-[80px] h-[80px] hover:brightness-80 rounded-[100%] text-white text-[40px] font-bold font-["Inter] '>
+        <button onClick={update} className='bg-[#505050] lg:w-[80px] lg:h-[80px] w-[68px] h-[68px] hover:brightness-80 rounded-[100%] text-white text-3xl lg:text-[40px] font-bold font-["Inter] '>
             {props.num}
         </button>
   )
