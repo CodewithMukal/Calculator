@@ -3,3 +3,6 @@
 .grad{
   background: linear-gradient(90deg, #AB00D9 0%, #040073 100%);
 }
+.buttons{
+  @apply lg:w-[80px] lg:h-[80px] w-[50px] h-[50px] hover:brightness-80 rounded-[100%] text-white text-2xl lg:p-0 p-[10%] lg:text-[40px] font-bold font-["Inter"];
+}

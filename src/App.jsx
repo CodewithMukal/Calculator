@@ -47,10 +47,10 @@ function App() {
     </div>
       <div ref={containerRef} className="container hidden bg-[#1C1C1C] lg:w-[553px] lg:h-[899px] rounded-[71px] mt-[50px] fixed top-[45%] left-[50%] translate-[-50%] w-[80%] h-[90%]">
         <div>
-          <h1 className=' text-white text-center font-["Inter"] text-[32px] font-bold pt-[17px] '>
+          <h1 className=' text-white font-["Inter"] text-[32px] font-bold pt-[17px] flex justify-center items-center'>
             Calculator
           </h1>
-          <div className="flex gap-[15px] justify-end relative bottom-[30px] right-[23px] ">
+          <div className="hidden lg:flex gap-[15px] justify-end relative bottom-[30px] right-[23px] ">
             <button className="group" onClick={close}>
               <img src={closeButton} alt="" className="group-hover:hidden block "/>
               <img src={closeButtonHover} alt="" className="group-hover:block hidden "/>
@@ -75,7 +75,7 @@ function App() {
           </p>
         </div>
         <Line/>
-        <div className="grid grid-cols-4 mt-[20px] lg:mt-[30px] ml-[30px] lg:gap-[18px] gap-[15px]">
+        <div className="grid grid-cols-4 mt-[20px] lg:mt-[30px] lg:ml-[50px] w-[90%] mx-auto lg:gap-[18px] gap-[10%]">
           <GreyButton add="AC" className="clear" />
           <GreyButton add="+/-" className="invert"/>
           <GreyButton add="%" className="percent" />

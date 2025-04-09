@@ -21,7 +21,7 @@ export const GreyButton = (props) => {
     }
   }
   return (
-    <button onClick={update} className='lg:w-[80px] lg:h-[80px] w-[68px] h-[68px] text-3xl bg-[#D4D4D2] hover:brightness-80 rounded-[100%] text-white lg:text-[40px] font-bold font-["Inter] '>
+    <button onClick={update} className='buttons bg-[#D4D4D2] '>
         {props.add}
     </button>
   )
