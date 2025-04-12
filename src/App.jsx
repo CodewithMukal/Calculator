@@ -50,16 +50,16 @@ function App() {
           <h1 className=' text-white font-["Inter"] text-[32px] font-bold pt-[17px] flex justify-center items-center'>
             Calculator
           </h1>
-          <div className="hidden lg:flex gap-[15px] justify-end relative bottom-[30px] right-[23px] ">
+          <div className="flex gap-[15px] justify-end relative bottom-[30px] right-[23px] ">
             <button className="group" onClick={close}>
               <img src={closeButton} alt="" className="group-hover:hidden block "/>
               <img src={closeButtonHover} alt="" className="group-hover:block hidden "/>
             </button>
-            <button className="group" onClick={min}>
+            <button className="group hidden lg:block" onClick={min}>
               <img src={minButton} alt="" className="group-hover:hidden block "/>
               <img src={minButtonHover} alt="" className="group-hover:block hidden w-[17px] h-[17px] "/>
             </button>
-            <button className="group" onClick={max}>
+            <button className="group hidden lg:block" onClick={max}>
               <img src={maxButton} alt="" className="group-hover:hidden block "/>
               <img src={maxButtonHover} alt="" className="group-hover:block hidden"/>
             </button>
